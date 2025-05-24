@@ -74,7 +74,6 @@ Execute the following script from you linux terminal:
 
 ```
 sudo apt install micropython-mpremote
-
 mpremote mip install github:josverl/micropython-stubs/mip/typing.mpy
 ```
 
@@ -82,9 +81,7 @@ you should see:
 
 ```
 Install github:josverl/micropython-stubs/mip/typing.mpy
-
 Downloading github:josverl/micropython-stubs/mip/typing.mpy to /lib
-
 Installing: /lib/typing.mpy
 Done
 ```
