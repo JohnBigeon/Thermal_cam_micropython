@@ -91,8 +91,8 @@ try:
                 color = float_to_color(frame[index], min_value, value_range)
                 tft._pushcolor(color)
 
-        # Wait 5 seconds
-        time_elapsed = time.ticks_ms()-time_init
+        time_end = time.ticks_ms()
+        time_elapsed = time.ticks_diff(time_end, time_init)
         print("Frame sent!")
         print(f"Elapsed time {time_elapsed}ms")
         #time.sleep(5)
