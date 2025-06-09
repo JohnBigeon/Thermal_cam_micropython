@@ -136,13 +136,6 @@ make BOARD=ESP32_GENERIC_C3 USER_C_MODULES=/home/jbi/Micropython_prod/micropytho
 make BOARD=ESP32_GENERIC_C3 USER_C_MODULES=/home/jbi/Micropython_prod/micropython/ports/esp32/user_c_modules -j$(nproc)
  ```
 
-#### Upload the firmware
-```
-cd build-ESP32_GENERIC_C3/
-esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0 firmware.bin
-```
-
-
 #### Add to the frozen
 ```
 cd /home/jbi/Micropython_prod/micropython/ports/esp32
@@ -157,7 +150,9 @@ make BOARD=ESP32_GENERIC_C3 USER_C_modules=user_c_modules/st7789_mpy clean
 make BOARD=ESP32_GENERIC_C3 USER_C_modules=user_c_modules/st7789_mpy -j$(nproc)
 ```
 
+#### Upload the firmware
 ```
+cd build-ESP32_GENERIC_C3/
 esptool --no-stub --chip esp32c3 --port COM69 --baud 115200 write_flash -z 0x0 .\firmware.bin
 ```
 
