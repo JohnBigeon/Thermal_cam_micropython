@@ -17,7 +17,7 @@ The concept of this project is to display the MLX90640 imagery on a ST7735 LCD s
     </td>
     <td align="center">
       <img src="Pictures/optimized_precompiled_real_time_v01.gif" height="300"/><br/>
-      <b>Thermal image display via native micropython strategy.</b>
+      <b>Thermal image display via precompiled micropython strategy.</b>
     </td>
   </tr>
 </table>
